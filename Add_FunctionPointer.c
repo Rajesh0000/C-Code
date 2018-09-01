@@ -1,16 +1,16 @@
 #include<stdio.h>
 
-float Add(float,float);                         //Declaration Of Add Function
-float Sub(float,float);                         //Declaration Of Subtraction Function
-float Mul(float,float);                         //Declaration Of Multiplication Function
-float Div(float,float);                         //Declaration Of Division Function
+float Add(float,float);                             //Declaration Of Add Function
+float Sub(float,float);                             //Declaration Of Subtraction Function
+float Mul(float,float);                             //Declaration Of Multiplication Function
+float Div(float,float);                             //Declaration Of Division Function
 
 int main(){
 	int i;                                      //Integer variable declaration for MENU operation
 	float a,b,result;                           //Float variables for calculations
-	float (*fptr)(float,float);                 //Declaration of Pointer
-                                                //'fptr' is function pointer which takes two parameter and return float
-                                                //i.e. function pointer
+	float (*fptr)(float,float);                 /*Declaration of Pointer
+                                                    'fptr' is function pointer which takes two parameter and return float
+                                                    i.e. function pointer*/
 	printf("Enter Two Numbers\n");
 	scanf("%f%f",&a,&b);                        //Accepting Two Numbers
 
@@ -52,7 +52,7 @@ int main(){
 	return 0;
 }
 
-float Add(float a,float b){                     // Function Defined
+float Add(float a,float b){                         // Function Defined
 	return a+b;                                 // function name "Add" which takes two float type parameter and return float
 }
 
